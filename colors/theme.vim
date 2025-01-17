@@ -61,7 +61,7 @@ let s:visual_fg        = s:black
 let s:cursor_line      = s:black
 let s:constant         = s:yellow
 let s:operator         = s:dark_yellow
-let s:keyword          = s:yellow
+let s:keyword          = s:blue
 let s:selection        = s:yellow
 let s:selection_fg     = s:always_dark_black
 let s:ok               = s:green
@@ -89,7 +89,6 @@ else
     hi! link Cursor       Identifier
 endif
 hi! link Identifier       Normal
-hi! link Function         Identifier
 hi! link Type             Normal
 hi! link StorageClass     Type
 hi! link Structure        Type
@@ -129,6 +128,7 @@ hi! link Title            Constant
 
 " __Statement__
 call s:h("Statement",     {"fg": s:keyword, "cterm": "bold"})
+hi! link Function         Statement
 hi! link Include          Statement
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
@@ -193,8 +193,9 @@ endif
 hi! link helpHyperTextEntry Title
 hi! link helpHyperTextJump  String
 
-call s:h("StatusLineNC", {"fg": s:norm, "bg": s:bg})
-call s:h("StatusLine",   {"fg": s:norm, "bg": s:bg, "cterm": "reverse"})
+call s:h("StatusLineNC", {"fg": s:norm_subtle, "bg": s:bg})
+call s:h("StatusLine",   {"fg": s:norm, "bg": s:bg})
+
 
 " Semantic status line highlights
 call s:h("StatusLineOk", {
@@ -213,19 +214,19 @@ call s:h("StatusLineWarning", {
       \"fg": s:warning
       \})
 
-call s:h("WildMenu", {"fg": s:norm, "bg": s:cursor_line})
+call s:h("WildMenu", {"fg": s:keyword, "bg": s:bg})
 
 " __Pmenu__
-call s:h("Pmenu",       {"fg": s:norm, "bg": s:bg})
+call s:h("Pmenu",       {"fg": s:norm_subtle, "bg": s:bg})
 hi! link PmenuSbar      Pmenu
 " __PmenuThumb__
-call s:h("PmenuThumb",  {"fg": s:norm, "bg": s:bg, "cterm": "reverse"})
+call s:h("PmenuThumb",  {"fg": s:norm_subtle, "bg": s:bg})
 " __PmenuSel__
-call s:h("PmenuSel",    {"fg": s:norm, "bg": s:bg, "cterm": "reverse"})
+call s:h("PmenuSel",    {"fg": s:norm, "bg": s:bg})
 
-call s:h("Tabline",     {"fg": s:norm, "bg": s:bg})
-call s:h("TablineFill", {"fg": s:norm, "bg": s:bg})
-call s:h("TablineSel",  {"fg": s:norm, "bg": s:bg, "cterm": "reverse"})
+call s:h("Tabline",     {"fg": s:norm_subtle, "bg": s:bg})
+call s:h("TablineFill", {"fg": s:norm_subtle, "bg": s:bg})
+call s:h("TablineSel",  {"fg": s:norm, "bg": s:bg})
 
 " __CursorLine__
 call s:h("CursorLine",  {"bg": s:cursor_line})

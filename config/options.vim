@@ -28,6 +28,7 @@ set laststatus=2
 set previewheight=10
 set foldmethod=indent
 set nofoldenable
+set wildoptions=pum
 
 " For background color erase.
 set t_ut=
