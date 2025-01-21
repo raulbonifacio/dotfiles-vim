@@ -89,7 +89,7 @@ else
     hi! link Cursor       Identifier
 endif
 hi! link Identifier       Normal
-hi! link Type             Normal
+hi! link Type             Type
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
@@ -100,10 +100,6 @@ hi! link Delimiter        Special
 hi! link SpecialComment   Special
 hi! link Debug            Special
 hi! link VertSplit        Normal
-hi! link PreProc          Normal
-hi! link Define           PreProc
-hi! link Macro            PreProc
-hi! link PreCondit        PreProc
 
 " __Noise__
 call s:h("Noise",         {"fg": s:norm_subtle})
@@ -135,6 +131,10 @@ hi! link Repeat           Statement
 hi! link Label            Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
+hi! link PreProc          Statement
+hi! link Define           Statement
+hi! link Macro            Statement
+hi! link PreCondit        Statement
 
 " __Underlined__
 call s:h("Underlined",       {"fg": s:norm, "cterm": "underline"})
@@ -234,7 +234,7 @@ call s:h("CursorLine",  {"bg": s:cursor_line})
 call s:h("ColorColumn", {"bg": s:cursor_line})
 
 " __MatchParen__
-call s:h("MatchParen",  {"bg": s:yellow, "fg": s:always_dark_black})
+call s:h("MatchParen",  {"bg": s:yellow})
 
 hi! link htmlH1 Normal
 hi! link htmlH2 Normal
