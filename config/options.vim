@@ -29,6 +29,11 @@ set previewheight=10
 set foldmethod=indent
 set nofoldenable
 set wildoptions=pum
+set autoread
+set switchbuf=uselast,useopen
+set autoindent
+set smartindent
+set grepprg=grep\ -nHiRI
 
 " For background color erase.
 set t_ut=
