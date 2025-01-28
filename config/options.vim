@@ -1,4 +1,3 @@
-let mapleader= "\\"
 
 syntax on
 set number
@@ -20,6 +19,7 @@ set nowrap
 set splitbelow
 set signcolumn=yes
 set completeopt+=noselect,noinsert
+set completeopt-=preview
 set listchars+=eol:$,space:·,tab:\ \ \¦
 set tabstop=4
 set softtabstop=4

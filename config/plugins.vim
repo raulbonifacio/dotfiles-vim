@@ -12,13 +12,14 @@ call plug#end()
 " LSP configuration.
 let g:lsp_preview_float = 0
 let g:lsp_semantic_enabled = 1
-let g:lsp_semantic_delay = 150
+let g:lsp_semantic_delay = 0
 let g:lsp_signature_help_enabled = 1
-let g:lsp_signature_help_delay = 150
+let g:lsp_signature_help_delay = 10000
 let g:lsp_hover_ui = 'preview'
 let g:lsp_diagnostics_virtual_text_enabled = 0
 let g:lsp_completion_documentation_enabled = 0
 let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_document_highlight_enabled = 0
 
 function! s:on_lsp_buffer_enabled() abort
 
@@ -30,7 +31,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
     nmap <buffer> gr <plug>(lsp-references)
     nmap <buffer> gi <plug>(lsp-implementation)
-    nmap <buffer> gt <plug>(lsp-type-definition)
+    nmap <buffer> gD <plug>(lsp-type-definition)
     nmap <buffer> [s <plug>(lsp-previous-diagnostic)
     nmap <buffer> ]s <plug>(lsp-next-diagnostic)
     nmap <buffer> <c-k> <plug>(lsp-hover)
