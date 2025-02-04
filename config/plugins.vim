@@ -9,6 +9,14 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 call plug#end()
 
+" Disable Match Paren
+let loaded_matchparen = 1
+let loaded_matchparen = 1
+
+" Disable Netrw.
+let g:loaded_netrw       = 1
+let g:loaded_netrwPlugin = 1
+
 " LSP configuration.
 let g:lsp_preview_float = 0
 let g:lsp_semantic_enabled = 1
