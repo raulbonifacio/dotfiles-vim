@@ -22,6 +22,7 @@ set completeopt+=noselect,noinsert
 set completeopt-=preview
 set listchars+=eol:$,space:·,tab:\ \ \¦
 set tabstop=4
+set shiftwidth=4
 set softtabstop=4
 set noexpandtab
 set laststatus=2
