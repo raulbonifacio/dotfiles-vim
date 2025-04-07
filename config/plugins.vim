@@ -14,20 +14,19 @@ let loaded_matchparen = 1
 let loaded_matchparen = 1
 
 " Disable Netrw.
-let g:loaded_netrw       = 1
+let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 
 " LSP configuration.
 let g:lsp_preview_float = 0
-let g:lsp_semantic_enabled = 1
-let g:lsp_semantic_delay = 0
-let g:lsp_signature_help_enabled = 1
-let g:lsp_signature_help_delay = 10000
+let g:lsp_signature_help_enabled = 0
 let g:lsp_hover_ui = 'preview'
 let g:lsp_diagnostics_virtual_text_enabled = 0
 let g:lsp_completion_documentation_enabled = 0
 let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_diagnostics_echo_delay = 0
 let g:lsp_document_highlight_enabled = 0
+let g:lsp_semantic_enabled = 1
 
 function! s:on_lsp_buffer_enabled() abort
 
@@ -77,13 +76,13 @@ nnoremap <leader>cd <cmd> call AsyncompleteDisable() <cr>
 
 " Gitgutter configuration.
 let g:gitgutter_set_sign_backgrounds = 0
-highlight link GitGutterAdd    DiffAdd
-highlight link GitGutterChange DiffChange
-highlight link GitGutterDelete DiffDelete
+hi! link GitGutterDelete Added
+hi! link GitGutterChange Changed
+hi! link GitGutterDelete Removed
 
 augroup lsp_install
 
-	" Clear autocmds.
+    " Clear autocmds.
     autocmd!
 
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
