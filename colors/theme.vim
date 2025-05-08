@@ -58,7 +58,7 @@ hi! link Cursor Normal
 "lCursor
 "CursorIM
 hi! link CursorColumn Cursorline
-call s:h("Cursorline", {"fg": s:white, "bg": s:black})
+call s:h("Cursorline", {"fg": s:white, "bg": s:dark_black})
 "Directory
 call s:h("DiffAdd",	{"fg": s:dark_green, "bg": s:none})
 call s:h("DiffChange",	{"fg": s:dark_blue, "bg": s:none})

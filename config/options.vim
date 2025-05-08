@@ -1,5 +1,4 @@
 
-
 let g:c_syntax_for_h = 1
 let g:c_space_errors = 1
 let g:c_functions = 1
@@ -29,8 +28,8 @@ set signcolumn=auto
 set nowrap
 set splitbelow
 set signcolumn=yes
-set completeopt+=noselect,noinsert
-set completeopt-=preview
+set completeopt=menu
+set completefuzzycollect=keyword,whole_line,files
 set listchars+=eol:$,space:·,tab:\ \ \¦
 set fillchars+=vert:\ "Space in here
 set tabstop=4
@@ -47,5 +46,4 @@ set switchbuf=uselast,useopen
 set autoindent
 set smartindent
 set grepprg=grep\ -nHiRI
-
 

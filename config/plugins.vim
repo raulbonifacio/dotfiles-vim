@@ -64,12 +64,12 @@ nnoremap <leader>ld <cmd> call LspDisable() <cr>
 
 " Asyncomplete configuration.
 function! AsyncompleteEnable()
-	let b:asyncomplete_enable = 1
+    let b:asyncomplete_enable = 1
     echo "Asyncomplete enabled for buffer."
 endfunction
 
 function! AsyncompleteDisable()
-	let b:asyncomplete_enable = 0
+    let b:asyncomplete_enable = 0
     echo "Asyncomplete disabled for buffer."
 endfunction
 
