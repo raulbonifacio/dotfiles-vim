@@ -6,6 +6,7 @@ let g:c_function_pointers = 1
 
 " For background color erase.
 set t_ut=
+set t_Co=16
 set background=dark
 
 syntax on
@@ -28,7 +29,6 @@ set signcolumn=auto
 set nowrap
 set splitbelow
 set signcolumn=yes
-set completeopt=menu
 set completefuzzycollect=keyword,whole_line,files
 set listchars+=eol:$,space:·,tab:\ \ \¦
 set fillchars+=vert:\ "Space in here

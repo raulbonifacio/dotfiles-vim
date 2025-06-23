@@ -58,24 +58,24 @@ hi! link Cursor Normal
 "lCursor
 "CursorIM
 hi! link CursorColumn Cursorline
-call s:h("Cursorline", {"fg": s:white, "bg": s:dark_black})
+call s:h("Cursorline", {"fg": s:white, "bg": s:black})
 "Directory
 call s:h("DiffAdd",	{"fg": s:dark_green, "bg": s:none})
 call s:h("DiffChange",	{"fg": s:dark_blue, "bg": s:none})
 call s:h("DiffDelete",	{"fg": s:dark_red, "bg": s:none})
 call s:h("DiffText",	{"fg": s:dark_white, "bg": s:none})
-hi! link EndOfBuffer Pmenu
+hi! link EndOfBuffer LineNr
 call s:h("ErrorMsg", {"fg": s:dark_red, "bg": s:none})
 hi! link VertSplit Pmenu
 hi! link Folded Pmenu
 hi! link FoldColumn Pmenu
 hi! link SignColumn Pmenu
 hi! link IncSearch Search
-hi! link LineNr Pmenu
-hi! link LineNrAbove Pmenu
-hi! link LineNrBelow Pmenu
-hi! link CursorLineNr Pmenu
-hi! link CursorLineFold Pmenu
+call s:h("LineNr", {"fg": s:black, "bg": s:none})
+hi! link LineNrAbove LineNr
+hi! link LineNrBelow LineNr
+hi! link CursorLineNr LineNr
+hi! link CursorLineFold LineNr
 "CursorLineSign
 hi! link MatchParen Normal
 "MessageWindow
@@ -85,8 +85,12 @@ hi! link MoreMsg Normal
 "NonText
 call s:h("Normal",		{"fg": s:dark_white, "bg": s:none})
 "First
-call s:h("Pmenu",		{"fg": s:black})
-call s:h("PmenuSel",		{"fg": s:white})
+"
+"
+"dark_white
+"cterm
+call s:h("Pmenu",		{"fg": s:dark_white})
+call s:h("PmenuSel",		{"fg": s:dark_white, "cterm": "reverse"})
 hi! link PmenuKind Pmenu
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
