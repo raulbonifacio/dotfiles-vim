@@ -2,7 +2,7 @@
 function s:setup_c_file()
 	"Configure clang-format.
 	if executable('clang-format')
-	setlocal formatprg=clang-format\ -style=file
+		setlocal formatprg=clang-format\ -style=file
 	endif
 
 	" Add handy mapping for header and source file alternation.

@@ -28,7 +28,7 @@ let g:lsp_completion_documentation_enabled = 0
 let g:lsp_diagnostics_echo_cursor = 1
 let g:lsp_diagnostics_echo_delay = 0
 let g:lsp_document_highlight_enabled = 0
-let g:lsp_semantic_enabled = 1
+let g:lsp_semantic_enabled = 0
 
 function! s:on_lsp_buffer_enabled() abort
 

@@ -11,6 +11,7 @@
 " which in turn based on
 " https://github.com/reedes/vim-colors-pencil (MIT License)
 "
+"
 """
 hi clear
 
@@ -85,12 +86,8 @@ hi! link MoreMsg Normal
 "NonText
 call s:h("Normal",		{"fg": s:dark_white, "bg": s:none})
 "First
-"
-"
-"dark_white
-"cterm
-call s:h("Pmenu",		{"fg": s:dark_white})
-call s:h("PmenuSel",		{"fg": s:dark_white, "cterm": "reverse"})
+call s:h("Pmenu",		{"fg": s:black})
+call s:h("PmenuSel",		{"fg": s:cyan })
 hi! link PmenuKind Pmenu
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
@@ -127,7 +124,7 @@ hi! link Visual CursorLine
 
 "__SYNTAX__
 
-call s:h("Comment",		{"fg": s:black, "bg": s:none})
+call s:h("Comment",		{"fg": s:dark_cyan, "bg": s:none})
 call s:h("Constant",		{"fg": s:green, "bg": s:none})
 call s:h("Identifier",		{"fg": s:cyan, "bg": s:none})
 call s:h("Function",		{"fg": s:yellow, "bg": s:none})
