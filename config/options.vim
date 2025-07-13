@@ -29,6 +29,7 @@ set signcolumn=auto
 set nowrap
 set splitbelow
 set signcolumn=yes
+set completeopt+=fuzzy
 set completefuzzycollect=keyword,whole_line,files
 set listchars+=eol:$,space:·,tab:\ \ \¦
 set fillchars+=vert:\ "Space in here
