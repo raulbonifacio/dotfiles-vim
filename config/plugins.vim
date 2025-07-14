@@ -20,7 +20,7 @@ let g:loaded_netrwPlugin = 1
 " LSP configuration.
 let g:lsp_preview_float = 0
 let g:lsp_semantic_enabled = 1
-let g:lsp_semantic_delay = 0
+let g:lsp_semantic_delay = 250
 let g:lsp_signature_help_enabled = 0
 let g:lsp_hover_ui = 'preview'
 let g:lsp_diagnostics_virtual_text_enabled = 0
