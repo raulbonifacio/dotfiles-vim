@@ -87,7 +87,7 @@ hi! link MoreMsg Normal
 call s:h("Normal",		{"fg": s:dark_white, "bg": s:none})
 "First
 call s:h("Pmenu",		{"fg": s:black})
-call s:h("PmenuSel",		{"fg": s:cyan })
+call s:h("PmenuSel",		{"fg": s:blue })
 hi! link PmenuKind Pmenu
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
@@ -124,7 +124,7 @@ hi! link Visual CursorLine
 
 "__SYNTAX__
 
-call s:h("Comment",		{"fg": s:dark_cyan, "bg": s:none})
+call s:h("Comment",		{"fg": s:black, "bg": s:none})
 call s:h("Constant",		{"fg": s:green, "bg": s:none})
 call s:h("Identifier",		{"fg": s:cyan, "bg": s:none})
 call s:h("Function",		{"fg": s:yellow, "bg": s:none})
