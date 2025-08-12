@@ -1,7 +1,7 @@
 
 " Only do this when not done yet for this buffer
 if exists("b:did_c_config")
-  finish
+	finish
 endif
 
 let b:did_c_config = 1
