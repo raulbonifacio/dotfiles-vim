@@ -46,4 +46,5 @@ set autoread
 set switchbuf=uselast,useopen
 set autoindent
 set smartindent
+set nrformats=bin,hex
 set grepprg=grep\ -nHiRI\ --exclude-dir\ '.*'
